@@ -51,7 +51,7 @@ public class FeedScrollListener extends RecyclerView.OnScrollListener {
     }
 
     private void checkViewHolder(RecyclerView recyclerView, VideoTagEnum tagAutoPlayVideo) {
-        for (int child_index = 0; child_index < visibleCount+1; child_index++) {//有可能造成不完全显示的情况下不能自动播放
+        for (int child_index = 0; child_index <= visibleCount; child_index++) {//有可能造成不完全显示的情况下不能自动播放
             RecyclerView.ViewHolder viewHolder = recyclerView.getChildViewHolder(recyclerView.getChildAt(child_index));
             if (viewHolder instanceof VideoAdapter.VideoViewHolder) {
 
