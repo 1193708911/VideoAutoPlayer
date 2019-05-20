@@ -35,7 +35,10 @@ public class MainActivity extends AppCompatActivity {
         mVideoInfoEntities = new ArrayList<>();
         for (int i = 0; i < 20; i++) {
             VideoInfoEntity entity = new VideoInfoEntity();
-            if (i == 0 || i == 8 || i == 15 || i == 18) {
+            if (i == 0
+                    || i == 8
+                    || i == 15
+                    || i == 19) {
                 entity.setmItemType(VideoAdapter.TYPE_VIDEO);
                 entity.setmResId(R.drawable.b);
                 entity.setVideoUrl("http://vjs.zencdn.net/v/oceans.mp4");
